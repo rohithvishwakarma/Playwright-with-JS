@@ -109,7 +109,7 @@ console.log("Ternary Operator");
 var a = 10;
 var b = 20;
 console.log(a > b ? a : b); //Returns the value of the first operand if the condition is true, 
-// otherwise returns the value of the second operand
+// otherwise returns the value of the second operand (condition ? valueIfTrue : valueIfFalse)
 
 console.log("Type Operators");
 var a = 10;
@@ -135,7 +135,7 @@ console.log(typeof j);
 
 console.log("instanceof Operator");
 var a = 10;
-console.log(a instanceof Number);
+console.log(a instanceof Number); //Returns true if the object is an instance of the specified class
 var b = 20;
 console.log(b instanceof Number);
 var c = 30;

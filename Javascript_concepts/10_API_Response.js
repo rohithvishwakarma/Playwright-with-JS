@@ -6,22 +6,17 @@ switch (APIresponse) {
     case "201":
         console.log("PASS - Created: Resource created successfully");
     case "301":
-        console.log("PASS - OK: Request successful");
+        console.log("WARNING - Moved Permanently: URL has changed");
     case "400":
-        console.log("PASS - OK: Request successful");
+        console.log("FAIL - Bad Request: Check request payload");
     case "401":
-        console.log("PASS - OK: Request successful");
+        console.log("FAIL - Unauthorized: Check auth token");
     case "403":
-        console.log("PASS - OK: Request successful");
+        console.log("FAIL - Forbidden: Insufficient permissions");
     case "404":
-        console.log("PASS - OK: Request successful");
+        console.log("FAIL - Not Found: Check endpoint URL");
     case "500":
-        console.log("PASS - OK: Request successful");
+        console.log("FAIL - Internal Server Error: Backend issue");
     default:
-        console.log("PASS - OK: Request successful");
-
-
-
-
-
+        console.log("UNKNOWN - Unhandled status code");
 }
